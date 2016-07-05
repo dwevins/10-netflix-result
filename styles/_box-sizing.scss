@@ -1,5 +1,6 @@
 // apply a natural box layout model to all elements, but allowing components to change
 html {
+  overflow: hidden;
   box-sizing: border-box;
 }
 
@@ -12,10 +13,11 @@ html {
   }
 }
 
-.wrapper {
+.page-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
+  height: 100vh;
   background: $black;
 }
