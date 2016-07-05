@@ -1,3 +1,7 @@
+.bold {
+  font-weight: bold;
+}
+
 .app {
   padding: $gutter;
   font-family: sans-serif;
@@ -22,7 +26,6 @@
     &--left {
       display: flex;
       flex-direction: column;
-      font-weight: bold;
     }
 
     &--right {
@@ -37,12 +40,6 @@
     flex-direction: column;
     width: 100%;
   }
-}
-
-.title {
-  margin-top: 0;
-  margin-bottom: 0.5 * $gutter;
-  font-size: 3rem;
 }
 
 .image-box {
@@ -66,4 +63,26 @@
     color: $white;
     font-size: 1.2rem;
   }
+}
+
+.metrics {
+
+  &__title {
+    font-size: 2rem;
+  }
+
+  &__genre {
+    font-size: 1.2rem;
+  }
+
+  &__rating {
+    font-size: 1.5rem;
+  }
+
+  &__item--margin {
+    margin-top: 0;
+    margin-bottom: 0.5 * $gutter;
+  }
+
+
 }
