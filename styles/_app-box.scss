@@ -2,6 +2,15 @@
   font-weight: bold;
 }
 
+.heading {
+  font-size: 1.5rem;
+}
+
+.item-margin {
+  margin-top: 0;
+  margin-bottom: 0.6 * $gutter;
+}
+
 .app {
   padding: $gutter;
   font-family: sans-serif;
@@ -78,11 +87,4 @@
   &__rating {
     font-size: 1.5rem;
   }
-
-  &__item--margin {
-    margin-top: 0;
-    margin-bottom: 0.5 * $gutter;
-  }
-
-
 }
