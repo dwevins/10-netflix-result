@@ -3,4 +3,25 @@
   flex-direction: column;
   width: 57%;
   background: $gray;
+
+  &__search {
+    display: flex;
+  }
+
+  &__top {
+    display: flex;
+
+    &--left {
+      display: flex;
+    }
+
+    &--right {
+      display: flex;
+
+    }
+  }
+
+  &__bottom {
+    display: flex;
+  }
 }
