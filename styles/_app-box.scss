@@ -1,5 +1,6 @@
 .app {
   padding: $gutter;
+  font-family: sans-serif;
 }
 
 .app-box {
@@ -37,6 +38,25 @@
   }
 }
 
+.title {
+  font-size: 3rem;
+}
+
 .image-box {
   width: 100%;
+}
+
+.search {
+
+  &__bar {
+    width: 100%;
+    border: 0;
+  }
+
+  &__btn {
+    width: 10%;
+    border: 0;
+    background-color: $blue;
+    color: $white;
+  }
 }
