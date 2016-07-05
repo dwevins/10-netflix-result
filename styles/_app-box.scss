@@ -1,4 +1,6 @@
 .app-box {
+  display: flex;
+  flex-direction: column;
   width: 57%;
   background: $gray;
 }
