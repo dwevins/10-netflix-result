@@ -86,5 +86,9 @@
 
   &__rating {
     font-size: 1.5rem;
+
+    &--star {
+      margin-left: 0.2 * $gutter;
+    }
   }
 }
