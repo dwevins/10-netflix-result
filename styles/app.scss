@@ -4,7 +4,8 @@
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 $gray: #e3e3e3;
 $blue: #5577e3;
+$black: #000;
 
 @import 'font-awesome';
 @import 'box-sizing';
-@import 'content-box';
+@import 'app-box';
