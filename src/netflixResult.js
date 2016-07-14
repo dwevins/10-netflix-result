@@ -8,14 +8,14 @@ export default function (parent, query) {
   const summary = parent.querySelector('.summary__content');
   const actors = parent.querySelector('.actors__content');
 
-  const movieFetch = fetch(`http://netflixroulette.net/api/api.php?title=${query}`);
-  const movieJson = movieFetch.then((res) => res.json());
-  movieJson.then((data) => {
-    title.innerText = data.show_title;
-    genre.innerText = data.category;
-    rating.innerText = data.rating;
-    image.src = data.poster;
-    summary.innerText = data.summary;
-    actors.innerText = data.show_cast;
-  });
+  fetch(`http://netflixroulette.net/api/api.php?title=${query}`)
+    .then((res) => res.json())
+    .then((data) => {
+      title.innerText = data.show_title;
+      genre.innerText = data.category;
+      rating.innerText = data.rating;
+      image.src = data.poster;
+      summary.innerText = data.summary;
+      actors.innerText = data.show_cast;
+    });
 }

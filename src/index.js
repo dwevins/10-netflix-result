@@ -2,14 +2,20 @@
 
 import netflixResult from 'netflixResult';
 
+function getQuery() {
+  let query = parent.querySelector('.search__bar').value;
+  if (query === '') {
+    query = 'attack on titan';
+  }
+  return query;
+}
+
+function update() {
+  const query = getQuery();
+  netflixResult(parent, query);
+}
+
 export default function (parent) {
   const searchBtn = parent.querySelector('.search__btn');
-
-  function update() {
-    const query = parent.querySelector('.search__bar').value;
-    console.log(query);
-    netflixResult(parent, query);
-  }
-
   searchBtn.addEventListener('click', update);
 }
