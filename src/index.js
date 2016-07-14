@@ -16,6 +16,8 @@ function update() {
 }
 
 export default function (parent) {
+  update(parent);
+
   const searchBtn = parent.querySelector('.search__btn');
   searchBtn.addEventListener('click', update);
 }
